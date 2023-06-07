@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+</head>
+<body>
+	<div class="prediction">
+		<h1>OpenAI GPT-3 Results</h1>
+		<p><strong>Start Phrase:</strong> {{ start_phrase }}</p>
+		<p><strong>Generated Response:</strong> {{ text }}</p>
+	</div>
+
+	<form method="post" class="form">
+		<h3>Post your prompt:</h3>
+        <textarea class="formInput" name="start_phrase" rows="10"></textarea>
+		<input type="submit" class="button" value="Generate Response">
+	</form>
+</body>
+</html>
