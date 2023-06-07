@@ -7,11 +7,11 @@ load_dotenv()
 app = Flask(__name__)
 
 # API key for your OpenAI account
-openai.api_key = os.environ['KEY']
-openai.api_base =  os.environ['BASE'] # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
-openai.api_type = os.environ['TYPE']
-openai.api_version = os.environ['VERSION'] # this may change in the future
-deployment_name = os.environ['DEPLOYMENT_NAME']
+openai.api_key = os.environ['key']
+openai.api_base =  os.environ['base'] # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
+openai.api_type = os.environ['type']
+openai.api_version = os.environ['version'] # this may change in the future
+deployment_name = os.environ['deployment_name']
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
